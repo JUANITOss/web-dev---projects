@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+
+    <main>
+        <h1 id="title">Super Cool Survey Form</h1>
+        <p id="description">This is my first responsive web project!</p>
+    </main>
+
+    <section>
+        <form action="" id="survey-form">
+
+            <fieldset>
+                <label for="name" id="name-label">Enter your name: <input type="text" name="name" id="name" placeholder="my name is..." value="Name" required></label>
+                <label for="email" id="email-label">Enter your email: <input type="email" name="email" id="email" placeholder="this-is@my-email.com" value="random@random.com" required></label>
+                <label for="number" id="number-label">Enter a number: <input type="number" id="number" name="number" pattern="[0-9]" max="1000" min="0" value="0" placeholder="13?"></label>
+            </fieldset>
+
+            <fieldset>
+                <label for="dropdown"> Select an option:
+                    <select name="selector" id="dropdown">
+                        <option value="">(select one please)</option>
+                        <option value="1">I like this option</option>
+                        <option value="2">I like this one better</option>
+                        <option value="3">This is the coolest of them all</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <label for="radioA"><input class="inline" type="radio" name="radios" id="radioA" value="0">Choose this one</label>
+                <label for="radioB"><input class="inline" type="radio" name="radios" id="radioB" value="1">No! Choose this one</label>
+            </fieldset>
+            <fieldset>
+                <label for="checkboxA"><input class="inline" type="checkbox" name="checkboxs" id="checkboxA" value="0">Here you can choose both!</label>
+                <label for="checkboxB"><input class="inline" type="checkbox" name="checkboxs" id="checkboxB" value="0">Yayy</label>
+            </fieldset>
+
+            <fieldset>
+                <label for="comments">Any additional comments? <textarea name="comments" id="comments"></textarea></label>
+            </fieldset>
+            
+            
+
+            <label for="submit"><input type="submit" name="submit" id="submit" value="Send!"></label>
+        </form>
+    </section>
+
+    <footer>
+        <p>The end! All rights reserved to Juan.</p>
+    </footer>
+
+</body>
+</html>
